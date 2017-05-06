@@ -15,7 +15,7 @@ ngctl name en0:lower sacn_mangle
 ngctl connect sacn_mangle: em1: out upper
 ~~~~
 
-2. Block a range of address by setting the range to the value 0, this allows other transmitters for this address range and priorty to win HTP. If the range is 512 then the entire packet is dropped.
+2. Block a range of address by setting the range to the value 0, this allows other transmitters for this address range, and priorty; to win HTP. If the range is 512 then the entire packet is dropped.
 * Example: Block address 1->100 on universe 1 on node "sacn_mangle"
 ~~~~
 ngctl msg sacn_mangle: set_block_start { universe=1 value=1 }
@@ -23,13 +23,13 @@ ngctl msg sacn_mangle: set_block_length { universe=1 value=100 }
 ~~~~
 
 3. Change priority
-* Change the universe priority for universe 1 to 50 on node "sacn_mangle"
+* Example: Change the universe priority for universe 1 to 50 on node "sacn_mangle"
 ~~~~
 ngctl msg sacn_mangle: set_priority { universe=1 value=50 }
 ~~~~
 
 3. Change universe
-* Change the universe number for universe 1 to universe 100
+* Example: Change the universe number for universe 1 to universe 100
 ~~~~
 ngctl msg sacn_mangle: set_universe { universe=1 value=100 }
 ~~~~
