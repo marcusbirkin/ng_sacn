@@ -1,7 +1,7 @@
 # ng_sacn
 ## Change E1.31 sACN packets in transit
 
-Developed for FreeBSD 10.2, this is a netgraph node (https://www.freebsd.org/cgi/man.cgi?netgraph(4)) for modifying E1.31 Lightweight streaming protocol for transport of DMX512 using ACN (aka Steaming ACN/sACN) packets in transit.
+Developed for FreeBSD 10.2, this is a netgraph node (https://www.freebsd.org/cgi/man.cgi?netgraph(4)) for modifying E1.31 Lightweight streaming protocol for transport of DMX512 using ACN (aka Streaming ACN/sACN) packets in transit.
 It supports both draft (v0.2) and release (E1.31:2009).
 
 
